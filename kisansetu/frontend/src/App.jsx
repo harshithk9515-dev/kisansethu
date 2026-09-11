@@ -247,9 +247,9 @@ export default function App() {
     return (
       <div className="min-h-screen bg-[#f7f9f6] flex flex-col font-sans">
         <div className="bg-white border-b border-gray-200 px-6 py-3 flex items-center gap-2">
-          <div className="w-7 h-7 rounded bg-[#22592d] text-white flex items-center justify-center text-sm">🌾</div>
+          <div className="w-7 h-7 rounded bg-[#22592d] text-white flex items-center justify-center text-sm" aria-hidden="true">🌾</div>
           <span className="font-bold text-[#22592d]">KisanSetu</span>
-          <span className="ml-auto flex items-center gap-1.5 bg-gray-100 px-2.5 py-1 rounded text-xs font-semibold cursor-pointer" onClick={() => setLanguage(l => l === 'EN' ? 'KN' : 'EN')}><Globe className="w-3.5 h-3.5 text-green-700" /> {language === 'EN' ? 'English (EN)' : 'ಕನ್ನಡ (KN)'}</span>
+          <button className="ml-auto flex items-center gap-1.5 bg-gray-100 px-2.5 py-1 rounded text-xs font-semibold cursor-pointer hover:bg-gray-200 transition" onClick={() => setLanguage(l => l === 'EN' ? 'KN' : 'EN')} aria-label="Toggle language between English and Kannada"><Globe className="w-3.5 h-3.5 text-green-700" aria-hidden="true" /> {language === 'EN' ? 'English (EN)' : 'ಕನ್ನಡ (KN)'}</button>
         </div>
         <div className="flex-1 flex items-center justify-center p-4">
           <div className="w-full max-w-md bg-white border border-gray-200 rounded-2xl shadow-sm p-6">
@@ -292,7 +292,7 @@ export default function App() {
     <div className="min-h-screen bg-[#f7f9f6] text-slate-800 flex flex-col font-sans">
       
       {/* 1. TOP GLOBAL SEARCH BAR & QUERY PILLS */}
-      <header className="bg-white border-b border-gray-200 px-6 py-3 sticky top-0 z-30 shadow-xs">
+      <header role="banner" className="bg-white border-b border-gray-200 px-6 py-3 sticky top-0 z-30 shadow-xs">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <form 
             onSubmit={(e) => { e.preventDefault(); executeSearch(); }} 
@@ -304,15 +304,17 @@ export default function App() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={language === 'KN' ? "ಉದಾಹರಣೆ: 'ಜೇಡಿಮಣ್ಣಿನಲ್ಲಿ ಗೋಧಿ ಬೆಳೆಗೆ ಉತ್ತಮ ರಸಗೊಬ್ಬರ'" : "e.g., 'Best fertilizer for wheat in clay soil'"}
+              aria-label="Search agricultural queries"
               className="w-full pl-10 pr-10 py-2 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:bg-white transition"
             />
             <button 
               type="button" 
               onClick={handleVoiceSearch} 
               title="Speak query"
+              aria-label="Activate Vernacular Voice Input"
               className="absolute right-3.5 top-2.5 text-gray-400 hover:text-green-600 transition cursor-pointer"
             >
-              <Mic className="w-4 h-4" />
+              <Mic className="w-4 h-4" aria-hidden="true" />
             </button>
           </form>
 
@@ -345,7 +347,7 @@ export default function App() {
       </header>
 
       {/* 2. SUB-NAV BAR (Underline States & Working Language Toggle) */}
-      <nav className="bg-white border-b border-gray-200 px-6 py-2.5">
+      <nav role="navigation" aria-label="Primary navigation" className="bg-white border-b border-gray-200 px-6 py-2.5">
         <div className="max-w-7xl mx-auto flex items-center justify-between text-xs font-medium text-gray-600">
           <div className="flex items-center gap-6">
             <div 
@@ -410,9 +412,10 @@ export default function App() {
             {/* Synchronized Language Switcher */}
             <button 
               onClick={() => setLanguage(l => l === 'EN' ? 'KN' : 'EN')} 
+              aria-label="Toggle language between English and Kannada"
               className="flex items-center gap-1.5 bg-gray-100 hover:bg-gray-200 px-2.5 py-1 rounded text-slate-800 font-semibold transition cursor-pointer"
             >
-              <Globe className="w-3.5 h-3.5 text-green-700" /> 
+              <Globe className="w-3.5 h-3.5 text-green-700" aria-hidden="true" /> 
               {language === 'EN' ? 'English (EN)' : 'ಕನ್ನಡ (KN)'}
             </button>
             <span className="flex items-center gap-1 text-slate-700 font-semibold"><User className="w-3.5 h-3.5" /> {language === 'KN' ? 'ರಾಜೇಶ್' : 'Rajesh'}</span>
@@ -421,7 +424,7 @@ export default function App() {
       </nav>
 
       {/* 3. MAIN CONTENT WORKSPACE */}
-      <main className="max-w-7xl mx-auto px-6 py-6 flex-1 w-full">
+      <main role="main" className="max-w-7xl mx-auto px-6 py-6 flex-1 w-full">
 
         {/* VIEW 1: DISEASE SCAN */}
         {activeTab === 'disease' && (
@@ -472,7 +475,7 @@ export default function App() {
                       className="border-2 border-dashed border-gray-200 hover:border-green-600 rounded-xl p-6 text-center bg-gray-50/50 cursor-pointer transition"
                     >
                       {imagePreview ? (
-                        <img src={imagePreview} alt="Leaf preview" className="w-full h-36 object-contain rounded-md mb-2" />
+                        <img src={imagePreview} alt="Preview of uploaded crop leaf for disease diagnosis - selected image ready for AI analysis" className="w-full h-36 object-contain rounded-md mb-2" />
                       ) : (
                         <div className="flex flex-col items-center">
                           <div className="w-10 h-10 rounded-full bg-green-50 text-green-700 flex items-center justify-center mb-2">
@@ -490,6 +493,7 @@ export default function App() {
                         accept="image/*" 
                         onChange={handleFileChange} 
                         className="hidden" 
+                        aria-label="Upload Crop Leaf Image for Diagnosis"
                       />
                       
                       <div className="flex gap-2 mt-4">
@@ -817,6 +821,16 @@ export default function App() {
         )}
 
       </main>
+
+      <footer role="contentinfo" className="bg-white border-t border-gray-200 px-6 py-4 mt-auto">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+          <p>© 2026 KisanSetu — Bridging Farmers to Intelligence. Built for Karnataka farmers with ❤️</p>
+          <p className="flex items-center gap-3">
+            <span>FastAPI • React 18 • Gemini 3.6 Flash • Tailwind 3.4</span>
+            <a href="tel:18001801551" className="text-[#22592d] hover:text-[#1b4322] font-semibold" aria-label="Call Kisan Call Centre Toll-Free 1800-180-1551">📞 1800-180-1551</a>
+          </p>
+        </div>
+      </footer>
 
       {/* 4. DYNAMIC GLOBAL SEARCH & VOICE RESULT MODAL */}
       {showSearchModal && (
