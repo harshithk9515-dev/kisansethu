@@ -1,0 +1,147 @@
+{
+  "Tomato": {
+    "nitrogen": {
+      "deficient_max": 80,
+      "optimal_min": 80,
+      "optimal_max": 120,
+      "excess_min": 120,
+      "unit": "kg/ha"
+    },
+    "phosphorus": {
+      "deficient_max": 25,
+      "optimal_min": 25,
+      "optimal_max": 50,
+      "excess_min": 50,
+      "unit": "kg/ha"
+    },
+    "potassium": {
+      "deficient_max": 60,
+      "optimal_min": 60,
+      "optimal_max": 100,
+      "excess_min": 100,
+      "unit": "kg/ha"
+    },
+    "ph": {
+      "optimal_min": 6.0,
+      "optimal_max": 7.0,
+      "acidic_max": 6.0,
+      "alkaline_min": 7.0
+    }
+  },
+  "Potato": {
+    "nitrogen": {
+      "deficient_max": 90,
+      "optimal_min": 90,
+      "optimal_max": 130,
+      "excess_min": 130,
+      "unit": "kg/ha"
+    },
+    "phosphorus": {
+      "deficient_max": 30,
+      "optimal_min": 30,
+      "optimal_max": 60,
+      "excess_min": 60,
+      "unit": "kg/ha"
+    },
+    "potassium": {
+      "deficient_max": 80,
+      "optimal_min": 80,
+      "optimal_max": 130,
+      "excess_min": 130,
+      "unit": "kg/ha"
+    },
+    "ph": {
+      "optimal_min": 5.0,
+      "optimal_max": 6.5,
+      "acidic_max": 5.0,
+      "alkaline_min": 6.5
+    }
+  },
+  "Wheat": {
+    "nitrogen": {
+      "deficient_max": 70,
+      "optimal_min": 70,
+      "optimal_max": 110,
+      "excess_min": 110,
+      "unit": "kg/ha"
+    },
+    "phosphorus": {
+      "deficient_max": 20,
+      "optimal_min": 20,
+      "optimal_max": 40,
+      "excess_min": 40,
+      "unit": "kg/ha"
+    },
+    "potassium": {
+      "deficient_max": 40,
+      "optimal_min": 40,
+      "optimal_max": 80,
+      "excess_min": 80,
+      "unit": "kg/ha"
+    },
+    "ph": {
+      "optimal_min": 6.0,
+      "optimal_max": 7.5,
+      "acidic_max": 6.0,
+      "alkaline_min": 7.5
+    }
+  },
+  "Cotton": {
+    "nitrogen": {
+      "deficient_max": 75,
+      "optimal_min": 75,
+      "optimal_max": 115,
+      "excess_min": 115,
+      "unit": "kg/ha"
+    },
+    "phosphorus": {
+      "deficient_max": 22,
+      "optimal_min": 22,
+      "optimal_max": 45,
+      "excess_min": 45,
+      "unit": "kg/ha"
+    },
+    "potassium": {
+      "deficient_max": 55,
+      "optimal_min": 55,
+      "optimal_max": 95,
+      "excess_min": 95,
+      "unit": "kg/ha"
+    },
+    "ph": {
+      "optimal_min": 5.8,
+      "optimal_max": 7.2,
+      "acidic_max": 5.8,
+      "alkaline_min": 7.2
+    }
+  },
+  "Paddy": {
+    "nitrogen": {
+      "deficient_max": 85,
+      "optimal_min": 85,
+      "optimal_max": 125,
+      "excess_min": 125,
+      "unit": "kg/ha"
+    },
+    "phosphorus": {
+      "deficient_max": 18,
+      "optimal_min": 18,
+      "optimal_max": 35,
+      "excess_min": 35,
+      "unit": "kg/ha"
+    },
+    "potassium": {
+      "deficient_max": 50,
+      "optimal_min": 50,
+      "optimal_max": 90,
+      "excess_min": 90,
+      "unit": "kg/ha"
+    },
+    "ph": {
+      "optimal_min": 5.5,
+      "optimal_max": 6.8,
+      "acidic_max": 5.5,
+      "alkaline_min": 6.8
+    }
+  }
+}

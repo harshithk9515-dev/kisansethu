@@ -1,0 +1,252 @@
+[
+  {
+    "crop": "Tomato",
+    "mandi": "Kolar",
+    "state": "Karnataka",
+    "modal_price": 2450,
+    "prev_price": 2280,
+    "change_pct": 7.46,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Tomato",
+    "mandi": "Bangalore",
+    "state": "Karnataka",
+    "modal_price": 2680,
+    "prev_price": 2600,
+    "change_pct": 3.08,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Tomato",
+    "mandi": "Hubli",
+    "state": "Karnataka",
+    "modal_price": 2100,
+    "prev_price": 2220,
+    "change_pct": -5.41,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Tomato",
+    "mandi": "Hassan",
+    "state": "Karnataka",
+    "modal_price": 2350,
+    "prev_price": 2180,
+    "change_pct": 7.8,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Tomato",
+    "mandi": "Mysore",
+    "state": "Karnataka",
+    "modal_price": 2520,
+    "prev_price": 2490,
+    "change_pct": 1.2,
+    "trend": "neutral",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Potato",
+    "mandi": "Kolar",
+    "state": "Karnataka",
+    "modal_price": 1850,
+    "prev_price": 1920,
+    "change_pct": -3.65,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Potato",
+    "mandi": "Bangalore",
+    "state": "Karnataka",
+    "modal_price": 2120,
+    "prev_price": 1980,
+    "change_pct": 7.07,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Potato",
+    "mandi": "Hubli",
+    "state": "Karnataka",
+    "modal_price": 1750,
+    "prev_price": 1700,
+    "change_pct": 2.94,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Potato",
+    "mandi": "Hassan",
+    "state": "Karnataka",
+    "modal_price": 1680,
+    "prev_price": 1750,
+    "change_pct": -4.0,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Potato",
+    "mandi": "Mysore",
+    "state": "Karnataka",
+    "modal_price": 1950,
+    "prev_price": 1930,
+    "change_pct": 1.04,
+    "trend": "neutral",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Onion",
+    "mandi": "Kolar",
+    "state": "Karnataka",
+    "modal_price": 2250,
+    "prev_price": 2100,
+    "change_pct": 7.14,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Onion",
+    "mandi": "Bangalore",
+    "state": "Karnataka",
+    "modal_price": 2480,
+    "prev_price": 2550,
+    "change_pct": -2.75,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Onion",
+    "mandi": "Hubli",
+    "state": "Karnataka",
+    "modal_price": 1980,
+    "prev_price": 1850,
+    "change_pct": 7.03,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Onion",
+    "mandi": "Hassan",
+    "state": "Karnataka",
+    "modal_price": 2150,
+    "prev_price": 2000,
+    "change_pct": 7.5,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Onion",
+    "mandi": "Mysore",
+    "state": "Karnataka",
+    "modal_price": 2320,
+    "prev_price": 2300,
+    "change_pct": 0.87,
+    "trend": "neutral",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Cotton",
+    "mandi": "Kolar",
+    "state": "Karnataka",
+    "modal_price": 6180,
+    "prev_price": 5950,
+    "change_pct": 3.87,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Cotton",
+    "mandi": "Bangalore",
+    "state": "Karnataka",
+    "modal_price": 6350,
+    "prev_price": 6400,
+    "change_pct": -0.78,
+    "trend": "neutral",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Cotton",
+    "mandi": "Hubli",
+    "state": "Karnataka",
+    "modal_price": 6520,
+    "prev_price": 6100,
+    "change_pct": 6.89,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Cotton",
+    "mandi": "Hassan",
+    "state": "Karnataka",
+    "modal_price": 6050,
+    "prev_price": 6250,
+    "change_pct": -3.2,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Cotton",
+    "mandi": "Mysore",
+    "state": "Karnataka",
+    "modal_price": 6280,
+    "prev_price": 6000,
+    "change_pct": 4.67,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Ragi",
+    "mandi": "Kolar",
+    "state": "Karnataka",
+    "modal_price": 3420,
+    "prev_price": 3250,
+    "change_pct": 5.23,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Ragi",
+    "mandi": "Bangalore",
+    "state": "Karnataka",
+    "modal_price": 3580,
+    "prev_price": 3600,
+    "change_pct": -0.56,
+    "trend": "neutral",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Ragi",
+    "mandi": "Hubli",
+    "state": "Karnataka",
+    "modal_price": 3350,
+    "prev_price": 3150,
+    "change_pct": 6.35,
+    "trend": "up",
+    "signal": "HOLD"
+  },
+  {
+    "crop": "Ragi",
+    "mandi": "Hassan",
+    "state": "Karnataka",
+    "modal_price": 3280,
+    "prev_price": 3400,
+    "change_pct": -3.53,
+    "trend": "down",
+    "signal": "SELL"
+  },
+  {
+    "crop": "Ragi",
+    "mandi": "Mysore",
+    "state": "Karnataka",
+    "modal_price": 3450,
+    "prev_price": 3380,
+    "change_pct": 2.07,
+    "trend": "up",
+    "signal": "HOLD"
+  }
+]
